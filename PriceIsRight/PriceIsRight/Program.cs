@@ -10,6 +10,7 @@ namespace PriceIsRight
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
