@@ -1,0 +1,38 @@
+﻿Room,DeviceName,DeviceType,Brand,Quantity,ValuePerItem
+Bar Area,Light Bulb - A19,Light,Phillips Hue,2,40
+Bar Area,Light Strip,Light,Phillips Hue,1,80
+Basement,Light Bulb - BR30,Light,Phillips Hue,3,40
+Basement,Light Strip,Light,Phillips Hue,3,80
+Basement,Light - IRIS,Light,Phillips Hue,5,60
+Basement,Light - Aurora,Light,NanoLeaf,3,200
+Basement,Light Strip,Light,LIFX,2,90
+Basement,Hub - Harmony,Hub,Logitech,1,60
+Basement,Smart Switch,Plug,TP-Link,2,25
+Basement,Light - GO,Light,Phillips Hue,2,60
+Basement,Light Bulb - A19,Light,Phillips Hue,1,40
+Bathroom,Light Bulb - A19,Light,Phillips Hue,4,40
+Bedroom,Light - GO,Light,Phillips Hue,1,60
+Bedroom,Light Bulb - A19,Light,Phillips Hue,4,30
+Bedroom,Light Strip,Light,NexLux,1,15
+Bedroom,Smart Switch,Plug,TP-Link,2,25
+Closet,Sensor - Motion,Sensor,Phillips Hue,1,30
+Closet,Light Bulb - A19,Light,Phillips Hue,3,40
+Kitchen,Light Strip,Light,Phillips Hue,3,80
+Kitchen,Light Bulb - A19,Light,Phillips Hue,4,40
+Kitchen,Sensor - Motion,Sensor,Phillips Hue,2,30
+Kitchen,Sensor - Door,Sensor,SmartThings,1,20
+Living Room,Sensor - Door,Sensor,SmartThings,1,20
+Living Room,Hub - SmartThings,Hub,Samsung,1,60
+Office,Light - IRIS,Light,Phillips Hue,2,60
+Office,Light Strip,Light,Phillips Hue,1,80
+Office,Light Bulb - BR30,Light,Phillips Hue,3,40
+Stairs,Light Bulb - A19,Light,Phillips Hue,4,40
+N/A,Sensor - Motion,Sensor,SmartThings,1,20
+N/A,Light Strip,Light,Phillips Hue,3,80
+Basement,Fire HD,Remote,Amazon,1,120
+Bedroom,Speaker,Smart Speaker,Sonos,1,200
+Kitchen,Echo Dot,Smart Speaker,Amazon,1,50
+Basement,Echo Dot,Smart Speaker,Amazon,1,50
+Office,Echo Dot,Smart Speaker,Amazon,1,30
+N/A,Echo Dot,Smart Speaker,Amazon,1,30
+Bedroom,Home mini,Smart Speaker,Google,1,50

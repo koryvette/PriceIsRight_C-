@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PriceIsRight
+namespace SmartHome
 {
-    class Program
+    class ValuePerItem
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }

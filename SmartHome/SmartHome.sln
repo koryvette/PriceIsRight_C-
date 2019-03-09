@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceIsRight", "PriceIsRight\PriceIsRight.csproj", "{E99EFF01-50B1-4423-80FC-16C76D7C0C45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome", "SmartHome\SmartHome.csproj", "{189ED6E3-942D-4661-A5F5-538BD11EA225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E99EFF01-50B1-4423-80FC-16C76D7C0C45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E99EFF01-50B1-4423-80FC-16C76D7C0C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E99EFF01-50B1-4423-80FC-16C76D7C0C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E99EFF01-50B1-4423-80FC-16C76D7C0C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189ED6E3-942D-4661-A5F5-538BD11EA225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189ED6E3-942D-4661-A5F5-538BD11EA225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189ED6E3-942D-4661-A5F5-538BD11EA225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189ED6E3-942D-4661-A5F5-538BD11EA225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {815C0601-8BC0-4D91-AA3D-C3985FCA2358}
+		SolutionGuid = {B781CA33-8398-4EF4-8584-2B28D4677AEE}
 	EndGlobalSection
 EndGlobal
