@@ -34,7 +34,7 @@ namespace SmartHome
                         break;
                    // case 2:
                    //     RemoveDevice();
-                        break;
+                   //     break;
                     case 3:
                         DisplayDeviceList();
                         break;
@@ -100,9 +100,9 @@ namespace SmartHome
             {
                 string location = Welcome.Prompt("Where is the device located? ");
                 string deviceName = Welcome.Prompt("What type of device are you adding? ");
-                string deviceType = Welcome.Prompt("What type of device is the " + deviceName + "?  ");
-                string brand = Welcome.Prompt("Who makes the " + deviceName + " ?  ");
-                string quantity = Welcome.Prompt("How many" + deviceName+ " would are you adding?  ");
+                string deviceType = Welcome.Prompt("What type of device is the deviceType?  ");
+                string brand = Welcome.Prompt("Who makes the brand of the device?  ");
+                string quantity = Welcome.Prompt("How many of these devices are you adding?  ");
 
                 _device.Add(new ListOfDevices { Location = location, DeviceName = deviceName, DeviceType = deviceType, Brand = brand, Quantity = quantity });
                 done = Welcome.Prompt("Add another device? (y/n) ").ToLower() != "y";

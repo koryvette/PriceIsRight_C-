@@ -8,10 +8,8 @@ namespace SmartHome
 {
     class Welcome
     {
-            
-        /// <summary>
-        /// Displays the welcome text.
-        /// </summary>
+
+        /// Display greeting.
         internal static void DisplayWelcome()
         {
             Console.WriteLine("Gadget Inventory");
@@ -19,11 +17,7 @@ namespace SmartHome
             Console.WriteLine("---");
         }
 
-        /// <summary>
         /// Prompts the user to provide a value.
-        /// </summary>
-        /// <param name="message">The message to display to the user.</param>
-        /// <returns>The response from the user</returns>
         internal static string Prompt(string message)
         {
             Console.Write(message);
@@ -34,4 +28,5 @@ namespace SmartHome
         }
     }
 }
+
 

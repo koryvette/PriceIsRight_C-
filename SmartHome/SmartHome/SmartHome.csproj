@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{189ED6E3-942D-4661-A5F5-538BD11EA225}</ProjectGuid>
+    <ProjectGuid>{D9708680-8455-4449-BDCB-9D1B5BE6D5F4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>SmartHome</RootNamespace>
     <AssemblyName>SmartHome</AssemblyName>
@@ -52,9 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="SmarthomeInventory.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="SmarthomeInventory.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
