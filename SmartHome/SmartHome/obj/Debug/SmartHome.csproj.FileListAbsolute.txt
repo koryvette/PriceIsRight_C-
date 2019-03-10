@@ -1,0 +1,7 @@
+C:\Users\79kor\source\repos\SmartHome\SmartHome\obj\Debug\SmartHome.csprojAssemblyReference.cache
+C:\Users\79kor\source\repos\SmartHome\SmartHome\obj\Debug\SmartHome.csproj.CoreCompileInputs.cache
+C:\Users\79kor\source\repos\SmartHome\SmartHome\bin\Debug\SmartHome.exe.config
+C:\Users\79kor\source\repos\SmartHome\SmartHome\bin\Debug\SmartHome.exe
+C:\Users\79kor\source\repos\SmartHome\SmartHome\bin\Debug\SmartHome.pdb
+C:\Users\79kor\source\repos\SmartHome\SmartHome\obj\Debug\SmartHome.exe
+C:\Users\79kor\source\repos\SmartHome\SmartHome\obj\Debug\SmartHome.pdb
