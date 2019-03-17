@@ -1,9 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SmartHome
 {
@@ -18,8 +15,7 @@ namespace SmartHome
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var fileName = Path.Combine(directory.FullName, "SmartHomeInventory.csv");
             var fileContents = ReadSmartHome(fileName);
-
-
+         
             // Display menu upon running program
             Welcome.DisplayWelcome();
 
@@ -39,8 +35,7 @@ namespace SmartHome
                         DisplayDeviceList();
                         break;
                    // case 4:
-                   //     RoomSummary();
-
+                   // RoomSummary();
                 }
             }
         }
@@ -65,6 +60,7 @@ namespace SmartHome
                 {
                     var device = new ListOfDevices();
                     string[] values = line.Split(',');
+
                     device.Location = values[0];
                     device.DeviceName = values[1];
                     device.DeviceType = values[2];
@@ -75,24 +71,10 @@ namespace SmartHome
                     smartHome.Add(device);
                 }
             }
-
-            return smartHome;
-                     
+            return smartHome;                    
         }
 
-
-
-        /// Displays the list of inventory.
-        static void DisplayDeviceList()
-        {
-            Console.WriteLine("List of Devices");
-            Console.WriteLine("----------");
-            _device.ForEach((dev) => Console.WriteLine(dev));
-            Console.WriteLine();
-                        
-        }
-
-        /// Prompts user for details of new device.
+        /// OPTION 1 - Prompts user for details of new device.
         static void AddDevice()
         {
             bool done = false;
@@ -109,5 +91,23 @@ namespace SmartHome
 
             } while (!done);
         }
+
+        /// OPTION 3 - Displays the list of inventory.
+        static void DisplayDeviceList()
+        {
+            Console.WriteLine("     List of Devices     ");
+            Console.WriteLine("\r\n");
+            _device.ForEach(device => Console.WriteLine(device));
+
+            Console.WriteLine();
+
+        }
+
+        // OPTION 4 - Get summary of devices by Room
+        //static void RoomSummary()
+        //{
+        //
+        //}
+
     }
 }
