@@ -14,7 +14,7 @@ namespace SmartHome
             string currentDirectory = Directory.GetCurrentDirectory();
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var fileName = Path.Combine(directory.FullName, "SmartHomeInventory.csv");
-            var fileContents = ReadSmartHome(fileName);
+            _device.AddRange(ReadSmartHome(fileName));
          
             // Display menu upon running program
             Welcome.DisplayWelcome();
@@ -46,7 +46,6 @@ namespace SmartHome
             {
                 return reader.ReadToEnd();
             }
-
         }
 
         public static List<ListOfDevices> ReadSmartHome(string fileName)
@@ -97,10 +96,15 @@ namespace SmartHome
         {
             Console.WriteLine("     List of Devices     ");
             Console.WriteLine("\r\n");
-            _device.ForEach(device => Console.WriteLine(device));
+            _device.ForEach(device => Console.WriteLine(device.Location + "     "+device.DeviceName + "     " +device.DeviceType + "     "+device.Brand+ "     " +device.Quantity + "     " +device.PricePerItem));
 
             Console.WriteLine();
 
+
+            //foreach (int d = 0; d < _device.Length; d++)
+            //{
+            //    Console.WriteLine($"{d + 1}) {_device[d]}");
+            //}
         }
 
         // OPTION 4 - Get summary of devices by Room
@@ -108,6 +112,5 @@ namespace SmartHome
         //{
         //
         //}
-
     }
 }
