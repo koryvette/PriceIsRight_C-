@@ -7,9 +7,8 @@ namespace SmartHome
         static string[] _options = new string[]
         {
             "Add item",
-            "Remove item",
             "View list",
-            "View Summary by Room",
+            "Save and export list ",
             "Quit"
         };
 
@@ -34,10 +33,10 @@ namespace SmartHome
             {
                 option = Welcome.Prompt($"Please select an option (1-{_options.Length}): ");
                 bool canParse = int.TryParse(option, out parsedOption);
-                valid = canParse && parsedOption > 0 && parsedOption <= 5;
+                valid = canParse && parsedOption > 0 && parsedOption <= 4;
                 if (!valid)
                 {
-                    Console.WriteLine("'" + option + "' is not a valid option. Please provide a number 1-5");
+                    Console.WriteLine("'" + option + "' is not a valid option. Please provide a number 1-6");
                 }
             }
             while (!valid);

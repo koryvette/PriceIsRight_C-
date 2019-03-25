@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Text;
 
 namespace SmartHome
 {
@@ -21,7 +22,7 @@ namespace SmartHome
 
             // Menu options
             int option = 0;
-            while ((option = Menu.Prompt()) != 5)
+            while ((option = Menu.Prompt()) != 4)
             {
                 switch (option)
                 {
@@ -31,11 +32,14 @@ namespace SmartHome
                    // case 2:
                    //     RemoveDevice();
                    //     break;
-                    case 3:
+                    case 2:
                         DisplayDeviceList();
                         break;
-                   // case 4:
-                   // RoomSummary();
+
+                    case 3:
+                        SaveList();
+                       break;
+
                 }
             }
         }
@@ -91,26 +95,53 @@ namespace SmartHome
             } while (!done);
         }
 
-        /// OPTION 3 - Displays the list of inventory.
+        /// OPTION 2 - Displays the list of inventory.
         static void DisplayDeviceList()
         {
             Console.WriteLine("     List of Devices     ");
             Console.WriteLine("\r\n");
-            _device.ForEach(device => Console.WriteLine(device.Location + "     "+device.DeviceName + "     " +device.DeviceType + "     "+device.Brand+ "     " +device.Quantity + "     " +device.PricePerItem));
+            //_device.ForEach(device => Console.WriteLine("   " + device.Location + "     "+ device.DeviceName + "     " +device.DeviceType + "     "+device.Brand+ "     " +device.Quantity + "     " +device.PricePerItem));
+            //Console.WriteLine();
 
-            Console.WriteLine();
-
-
-            //foreach (int d = 0; d < _device.Length; d++)
-            //{
-            //    Console.WriteLine($"{d + 1}) {_device[d]}");
-            //}
+            for (int i = 0; i < _device.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}) {_device[i]}");
+            }
         }
 
-        // OPTION 4 - Get summary of devices by Room
+        // OPTION 3 - Get summary of devices by Room
         //static void RoomSummary()
         //{
-        //
+        //    var devsum =
+        //        _device.GroupBy(d => _device);
+        //    var sumByRoom =
+        //        from s in devsum
+        //        orderby s.Sum()
+        //        select new { Location = s.Location, NumGadget = s.Count() };
+        //    foreach(var result in devsum)
+        //        Console.WriteLine(result);
+
+
+            //List<ListOfDevices> dev = ListManager._device();
+            //Console.WriteLine("     List of Devices     ");
+            //Console.WriteLine("\r\n");
+            //_device.ForEach(device => Console.WriteLine("   " + device.Location + "     " + device.DeviceName + "     " + device.DeviceType + "     " + device.Brand + "     " + device.Quantity + "     " + device.PricePerItem));
+            //Console.WriteLine();
         //}
+
+        // OPTION 3 - Export list of devices to CSV
+        static void  SaveList() 
+        {
+            var expList = new List<ListOfDevices>();
+            var writeTo = "smarthome.txt";
+        
+            StringBuilder sh = new StringBuilder();
+            foreach (ListOfDevices device in _device)
+            {
+                sh.AppendLine(device.Location + "," + device.DeviceType + ", "+ device.DeviceName + ", " + device.Brand + ", " + device.Quantity + ", " + device.PricePerItem);
+            }
+            File.WriteAllText(writeTo, sh.ToString());
+        
+        }
     }
 }

@@ -12,7 +12,10 @@ namespace SmartHome
         public string Brand { get; set; }
         public string Quantity { get; set; }
         public string PricePerItem { get; set; }
-
+        public override string ToString()
+        {
+            return Location+"  " + DeviceName + "  " + DeviceType + "  " + Brand + "  " + Quantity + "  " + PricePerItem;
+        }
     }
 
 
