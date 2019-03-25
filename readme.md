@@ -9,7 +9,10 @@ This data will show three things:
 * Export the new list to a CSV file.
   
     
-## How results were analyzed:  
-The following functionality has been added to this site:
+## The following classes were created:  
+* "Welcome" class was created to provide greeting in the console
+* "Menu" class to display menu options
+* "ListOfDevices" class was created to display the list of items
+* "ValuePerItem" class was created, but not used
   
 
