@@ -15,4 +15,8 @@ This data will show three things:
 * "ListOfDevices" class was created to display the list of items
 * "ValuePerItem" class was created, but not used
   
+  
+## The following options are available in the application:  
+ 1 - Add Item 
+ 2 - View List:  displays a current list of the items in the inventory 
 
