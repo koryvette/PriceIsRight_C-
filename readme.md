@@ -17,6 +17,7 @@ This data will show three things:
   
   
 ## The following options are available in the application:  
- 1 - Add Item 
- 2 - View List:  displays a current list of the items in the inventory 
-
+ 1 - Add Item:  Will prompt user for info to add a new item to the list  
+ 2 - View List:  Displays a current list of the items in the inventory  
+ 3 - Save and export list:  Save the new addition to the list  
+ 4 - Quit:  Exits the application  
