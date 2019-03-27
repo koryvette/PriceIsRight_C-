@@ -133,7 +133,7 @@ namespace SmartHome
         static void  SaveList() 
         {
             var expList = new List<ListOfDevices>();
-            var writeTo = "smarthome.txt";
+            var writeTo = "SmarthomeInventory.csv";
         
             StringBuilder sh = new StringBuilder();
             foreach (ListOfDevices device in _device)
